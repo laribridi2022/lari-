@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/logolarissa.svg" type="image x-icon">
+</head>
+<body>
+    
+    <nav>
+        <div class="container clearfix">
+            <h1><a href="index.html">
+                <img src="img/logolarissa.svg" alt="Logotipo">
+            </a>
+        </h1>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="produto.html">PRODUTOS</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container clearfix">
+            <h1 align="center">Placa Mãe Biostar </h1>
+            <h2 align="center">R$2.699,90</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="container clearfix">
+            <div class="col-6" id="col-1">
+
+                
+                <div class="slideshow-container">
+
+    
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/placa mae 1.jpg" style="width:100%">
+                        <div class="text">Imagem 1</div>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/placa mae 2.jpg" style="width:100%">
+                        <div class="text">Imagem 2</div>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/placa mae 3.jpg" style="width:100%">
+                        <div class="text">Imagem 3</div>
+                      </div>
+  
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+                <br><br><br><br>
+                <a href="indisponivel.html"><input type="button" value="Comprar" class="comprar"></a>
+            </div>
+            
+            <div class="col-6" id="col-2">
+                <p>NPLACA MAE BIOSTAR Z690GTA, DDR4, SOCKET LGA1700, ATX, CHIPSET INTEL Z690, Z690GTA</p>
+                <br><br>
+                <li>Total suporta 3 x Soquete M.2 e 8 x Portas SATA III (6 Gb/s)</li>
+                <li>8 x Conector SATA III (6 Gb/s): Suporta AHCI, RAID 0, 1, 5, 10 & Intel Rapid Storage Technology (somente SATA1~SATA4</li>
+                <li>1 x Soquete M.2 (chave M) (M2-PCIE4_64G_1)</li>
+                <li>Suporta módulo SSD M.2 tipo 2280</li>
+                <li>Suporta PCIe 4.0 x 4 (64Gb/s)</li>
+                <li>1 x Soquete M.2 (chave M) (M2_PCIE4_64G_2):</li>
+                <li>Suporta módulo SSD M.2 Tipo 2280</li>
+                <li>Suporta PCIe 4.0 x 4 (64Gb/s)</li>
+                <li>Suporta Tecnologia Intel Rapid Storage e Tecnologia Intel Optane</li>
+                <li>1 x M.2 (M Key) Soquete (M2_PCIEG3_32G_SATA_1):</li>
+                <li>Suporta M.2 Tipo 2242/2260 / Módulo SSD 2280/ 22110</li>
+                <li>Suporta PCIe 3.0 x 4 (32 Gb/s) e SATA III (6 Gb/s) SSD</li>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container clearfix">
+            <div class="col-4" id="coluna 1">
+                <h3>Sobre a nossa empresa</h3>
+                    <h4>
+                        A nossa empresa foi criada com o intuito de oferecer os melhores produtos no ramo de informática, inclusive para quem estiver começando nesse rumo. Contamos com os melhores produtos do mercado e com os melhores preços. Também contamos com os melhores serviços de assistência técnica do mercado.
+                    </h4>
+
+            </div>
+            <div class="col-4" id="coluna 2">
+                <h3>Localização</h3>
+                <h4 class="center2">
+                    Rua XV de Novembro<br>
+                    1085, Centro, Videira - SC<br>
+                </h4>
+            </div>
+            <div class="col-4" id="coluna 3">
+                <h3>Horário de Atendimento</h3>
+                <h4 class="center2">
+                    Segunda a sexta: 7h às 17h.<br>
+                    Domingos e feriados: fechado.
+                </h4>
+            </div>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+</body>
+</html>

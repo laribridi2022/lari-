@@ -1,0 +1,283 @@
+@font-face {
+    font-family: Regular;
+    src: url('OpenDyslexic-Regular.otf');
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+nav {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(248, 210, 242);
+    float: left;
+}
+
+nav h1 {
+    float: left;
+}
+
+nav h1 a img {
+    width: 100px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    float: left;
+    padding: 35px 15px;
+}
+
+nav ul li a {
+    background-color: rgb(95, 241, 234);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    /* margin: 15px; */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(200, 155, 236);
+    color: black;
+    background-color: #e5a2e7;
+    width: 375px;
+}
+
+header {
+    background-color: #b8ffa9;
+}
+
+header img {
+    width: 100%;
+    border: 5px solid #bf6fdf;
+}
+
+.clearfix {
+    overflow: auto;
+    font-family: Regular;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Grade de Clunas*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+
+footer {
+    background-color: #d5a4f3;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Estilos para o formulário */
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(255, 28, 217);
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: rgb(103, 241, 223);
+}
+
+.center2 {
+    text-align: center;
+}
+
+fieldset{
+    text-align: center;
+}
+
+input{
+    text-align: center;
+    background-color: #cc5bc6;
+    border-radius: 20px;
+    width: 80%;
+    height: 30px;
+    font-size: 100%;
+}
+
+button{
+    text-align: center;
+    background-color: #e5c7e9;
+    border-radius: 20px;
+    width: 20%;
+    height: 30px;
+    font-size: 100%;
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+.contato {
+    background-color: white;
+}
+
+.comprar{
+    text-align: center;
+    background-color: #9cffb1;
+    border-radius: 30px;
+    width: 75%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+}
+
+.form{
+    background-color: white;
+    text-align: left;
+}
+
+.mensage{
+    border-radius: 10px;
+    border: 1px solid pink;
+}
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+

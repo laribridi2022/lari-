@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/logolarissa.svg" type="image x-icon">
+</head>
+<body>
+    
+    <nav>
+        <div class="container clearfix">
+            <h1><a href="index.html">
+                <img src="img/logolarissa.svg" alt="Logotipo">
+            </a>
+        </h1>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="produto.html">PRODUTOS</a></li>
+            <li><a href="servicos.html">SERVIÇOS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container clearfix">
+            <h1 align="center">Notebook Lenovo IdeaPad </h1>
+            <h2 align="center">R$1.849,99</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="container clearfix">
+            <div class="col-6" id="col-1">
+
+                
+                <div class="slideshow-container">
+
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/notebook.jpg" style="width:100%">
+      <div class="text">Imagem 1</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/notebook.webp" style="width:100%">
+      <div class="text">Imagem 2</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/notebook 1.webp" style="width:100%">
+      <div class="text">Imagem 3</div>
+    </div>
+  
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+                <br><br><br><br>
+                <a href="indisponivel.html"><input type="button" value="Comprar" class="comprar"></a>
+            </div>
+            
+            <div class="col-6" id="col-2">
+                <p>Notebook Lenovo IdeaPad 3i Celeron 4GB 128GB SSD Linux 15.6 82BUS00100, Prata</p>
+                <br><br>
+                <li>Marca: Lenovo</li>
+                <li>Série: IdeaPad 3i</li>
+                <li>Tamanho da tela: 15.6</li>
+                <li>Cor: Prata</li>
+                <li>Modelo de CPU: Celeron N</li>
+                <li>Tamanho instalado da memporia RAM: 4GB</li>
+                <li>Sistema Operacional: Linux</li>
+                <li>Descriçao da placa de vídeo: Integrado</li>
+                <li>Velocidade de CPU: 1 </li>
+                <li>Descrição do disco rígido: SSD</li>
+                <li>Suporta M.2 Tipo 2242/2260 / Módulo SSD 2280/ 22110</li>
+                <li>Suporta PCIe 3.0 x 4 (32 Gb/s) e SATA III (6 Gb/s) SSD</li>
+                <li>Produto de origem: BR</li>
+                <li>Garantia: 1 ano</li>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container clearfix">
+            <div class="col-4" id="coluna 1">
+                <h3>Sobre a nossa empresa</h3>
+                    <h4>
+                        A nossa empresa foi criada com o intuito de oferecer os melhores produtos no ramo de informática, inclusive para quem estiver começando nesse rumo. Contamos com os melhores produtos do mercado e com os melhores preços. Também contamos com os melhores serviços de assistência técnica do mercado.
+                    </h4>
+
+            </div>
+            <div class="col-4" id="coluna 2">
+                <h3>Localização</h3>
+                <h4 class="center2">
+                    Rua XV de Novembro<br>
+                    1085, Centro, Videira - SC<br>
+                </h4>
+            </div>
+            <div class="col-4" id="coluna 3">
+                <h3>Horário de Atendimento</h3>
+                <h4 class="center2">
+                    Segunda a sexta: 7h às 17h.<br>
+                    Domingos e feriados: fechado.
+                </h4>
+            </div>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+</body>
+</html>
